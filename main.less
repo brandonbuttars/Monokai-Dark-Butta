@@ -19,15 +19,17 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
 /* Define some variables used in multiple places */
+
 @background: #242424;
 @foreground: #F8F8F2;
-
 /* Code Styling */
-.CodeMirror, .CodeMirror-scroll {
+
+.CodeMirror,
+.CodeMirror-scroll {
   background-color: @background;
   color: @foreground;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.85);
 }
 
 .CodeMirror-focused .CodeMirror-activeline-background {
@@ -43,56 +45,109 @@
     background-color: #3C3F41;
   }
 }
-
 /* cm-keyword    : var, function, !important */
 /* cm-operator   : CoffeeScript ->, CSS colons */
 /* cm-tag        : HTML elements */
 /* cm-bracket    : html < </ > */
-.cm-keyword, .cm-operator, .cm-tag, .cm-bracket { color: #F92672; }
 
+.cm-keyword,
+.cm-operator,
+.cm-tag,
+.cm-bracket {
+  color: #F92672;
+}
 /* cm-atom       : #id */
 /* cm-number     : 20 */
 /* cm-variable-2 : for key in [this], Markdown li */
-.cm-atom, .cm-number, .cm-variable-2 { color: #AE81FF; }
 
+.cm-atom,
+.cm-number,
+.cm-variable-2 {
+  color: #AE81FF;
+}
 /* cm-meta       : @font-face */
 /* cm-qualifier  : .box */
 /* cm-attribute  : class="" id="" */
 /* cm-builtin    : define, substr, const */
-.cm-meta, .cm-qualifier, .cm-attribute, .cm-builtin { color: #A6E22E; ;}
 
+.cm-meta,
+.cm-qualifier,
+.cm-attribute,
+.cm-builtin {
+  color: #A6E22E;
+  ;
+}
 /* cm-string     : "string" */
 /* cm-string-2   : some CSS values */
-.cm-string, .cm-string-2 { color: #E6DB74; }
 
+.cm-string,
+.cm-string-2 {
+  color: #E6DB74;
+}
 /* cm-property   : getElementbyId, CSS properties */
-.cm-property { color: #66D9EF; }
 
+.cm-property {
+  color: #66D9EF;
+}
 /* cm-comment    : // comments */
-.cm-comment { color: #8c8c8c; }
 
+.cm-comment {
+  color: #8c8c8c;
+}
 /* cm-variable   : $, i */
-.cm-variable { color: @foreground; }
 
+.cm-variable {
+  color: @foreground;
+}
 /* cm-def        : @include, [this] */
-.cm-def { color: #FD971F; }
 
+.cm-def {
+  color: #FD971F;
+}
 /* highlighted selection */
-.cm-matchhighlight { background-color: rgba(61,61,61,.23) ;}
 
+.cm-matchhighlight {
+  background-color: rgba(61, 61, 61, .23);
+}
 /* e.g. color : #4444 */
-.cm-error {color: #dc322f;}
 
+.cm-error {
+  color: #dc322f;
+}
 /* not sure if used */
-.cm-plus { color: #85a300; }
-.cm-minus { color: #dc322f; }
-.cm-variable-3 { color: @foreground; }
-.cm-header { color: #d85896; }
-.cm-link { color: #b77fdb; text-decoration: none; }
-.cm-rangeinfo { color: #6c71c4; }
-.cm-quote { color: #6c9ef8; }
-.cm-hr { color: @foreground; }
 
+.cm-plus {
+  color: #85a300;
+}
+
+.cm-minus {
+  color: #dc322f;
+}
+
+.cm-variable-3 {
+  color: @foreground;
+}
+
+.cm-header {
+  color: #d85896;
+}
+
+.cm-link {
+  color: #b77fdb;
+  text-decoration: none;
+}
+
+.cm-rangeinfo {
+  color: #6c71c4;
+}
+
+.cm-quote {
+  color: #6c9ef8;
+}
+
+.cm-hr {
+  color: @foreground;
+}
 /* Extra CSS */
 
 .CodeMirror-linenumber {
@@ -123,21 +178,21 @@
 }
 
 .CodeMirror-matchingbracket {
-    background-color: transparent !important;
-    color: #1dff00 !important;
-    text-shadow: 0 0 10px #1dff00;
-    font-weight: bold;
+  background-color: transparent !important;
+  color: #1dff00 !important;
+  text-shadow: 0 0 10px #1dff00;
+  font-weight: bold;
 }
 
 .CodeMirror-nonmatchingbracket {
-    color: #f00 !important;
-    text-shadow: 0 0 10px #f00;
-    backface-visibility: hidden;
-    font-weight: bold;
+  color: #f00 !important;
+  text-shadow: 0 0 10px #f00;
+  backface-visibility: hidden;
+  font-weight: bold;
 }
 
 .CodeMirror-matchingtag {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
@@ -151,9 +206,7 @@
     background-color: #f6a644;
   }
 }
-
 /* Extensions */
-
 /*
  * Code Folding (https://github.com/thehogfather/brackets-code-folding)
  * --------------------------------------------------------------------
@@ -166,12 +219,12 @@
 }
 
 .CodeMirror-foldgutter-folded:after {
-    content: "+";
-    font-size: 1.3em;
-    font-weight: bold;
-    background-color: transparent !important;
-    color: #1dff00 !important;
-    text-shadow: 0 0 10px #1dff00;
+  content: "+";
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: transparent !important;
+  color: #1dff00 !important;
+  text-shadow: 0 0 10px #1dff00;
 }
 
 .CodeMirror-foldgutter-folded {
@@ -183,12 +236,11 @@
 }
 
 .CodeMirror-foldmarker {
-    background-color: #333;
-    border-color: #555;
-    color: #1dff00;
-    padding: 0 10px;
+  background-color: #333;
+  border-color: #555;
+  color: #1dff00;
+  padding: 0 10px;
 }
-
 /**
 * Brackets Css Color Preview (https://github.com/cmgddd/Brackets-css-color-preview)
 * ---------------------------------------------------------------------------------
