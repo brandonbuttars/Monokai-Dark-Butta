@@ -1,17 +1,17 @@
 {
-  "title": "Monokai Dark Soda",
-  "name": "rain.monokai-dark-soda",
-  "description": "This dark theme is based on the monokai dark soda color scheme from Sublime Text.",
-  "version": "1.0.4",
+  "title": "Monokai Dark Butta",
+  "name": "monokai-dark-butta",
+  "description": "This dark theme is based on the monokai dark soda color scheme from rain based on Sublime Text.",
+  "version": "1.0.0",
   "author": {
-  "name": "rain",
-  "url": "https://github.com/rainje"
+    "name": "Brandon Buttars",
+    "url": "https://github.com/brandonbuttars"
   },
-  "homepage": "https://github.com/rainje/Monokai-Dark-Soda",
+  "homepage": "https://github.com/brandonbuttars/Monokai-Dark-Butta",
   "repository": {
-        "type": "git",
-        "url": "https://github.com/rainje/Monokai-Dark-Soda.git"
-    },
+    "type": "git",
+    "url": "https://github.com/brandonbuttars/Monokai-Dark-Butta.git"
+  },
   "license": "MIT",
   "engines": {
     "brackets": ">=1.0.0"
@@ -20,5 +20,5 @@
     "file": "main.less",
     "dark": true
   },
-  "keywords": ["theme","monokai","dark","soda","sublime","text"]
+  "keywords": ["theme", "monokai", "dark", "soda", "sublime", "text", "butta", "brackets"]
 }

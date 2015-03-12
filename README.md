@@ -1,7 +1,7 @@
-Monokai Dark Soda
+Monokai Dark Butta
 ===
 
-This theme is a fork of _Monokai_ Brackets theme from [Brackets-Themes](https://github.com/Brackets-Themes/Monokai) and is based on Monokai color scheme from [Monokai](http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/).
+This theme is a fork of _Monokai Dark Soda_ Brackets theme from [rain](https://github.com/rainje/Monokai-Dark-Soda) and is based on Monokai color scheme from [Monokai](http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/).
 
 Screenshots
 ---
@@ -26,7 +26,7 @@ This extension requires Brackets 1.0 or newer.
 1. Open Brackets
 2. Open the extension manager
 3. Click the Themes tab
-4. Search for ‘Monokai Dark Soda’
+4. Search for ‘Monokai Dark Butta’
 5. Click install
 
 Supported extensions
